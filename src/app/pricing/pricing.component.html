@@ -1,1 +1,19 @@
-<p>pricing works!</p>
+<!--<p>{{users|json}}</p>-->
+<!--<p>COUNT:- {{count}}</p>
+<div *ngFor="let usr of users.arr">
+    <div>{{usr.login}}</div>
+    <img src="{{usr.avatar_url}}" height="100px" width="100px" class="img-thumbnail">
+</div>-->
+<!--<p>{{movie|json}}</p>-->
+<div *ngFor="let u of movies">
+
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">{{u.id}}</h5>
+          <p class="card-text"><img src="{{u.medium_cover_image}}"></p>
+          <a href="#" class="card-link">Card link</a>
+        </div>
+      </div>
+
+    
+</div>
